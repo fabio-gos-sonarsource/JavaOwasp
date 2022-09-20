@@ -33,5 +33,5 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=SonarSource-Demos_BenchmarkJava \
-             -Dsonar.organization=bc-sonarsource-demos -Dsonar.host.url=https://sonarcloud.io</sonar.host.url -Dsonar.scm.disabled=true \
+             -Dsonar.organization=bc-sonarsource-demos -Dsonar.host.url=https://sonarcloud.io -Dsonar.scm.disabled=true \
              -Dsonar.cpd.exclusions=** \
